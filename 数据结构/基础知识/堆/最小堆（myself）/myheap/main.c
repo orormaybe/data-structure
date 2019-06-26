@@ -56,7 +56,7 @@ void insert(heap* myHeap,int x){
     int k=++myHeap->size;
     myHeap->data[k]=x;
     int parent=k/2;
-    while(parent>0&&myHeap->data[k]<myHeap->data[k]){
+    while(parent>0&&myHeap->data[k]<myHeap->data[parent]){
         int temp=myHeap->data[k];
         myHeap->data[k]=myHeap->data[parent];
         myHeap->data[parent]=temp;
